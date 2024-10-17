@@ -4,7 +4,7 @@ Shuffled Complex Evolution (SCE) is a global optimization algorithm using a hybr
 
 Steps involved in SCE are:
 
-1. Initialization: Generate an initial set of points into complexes randomly within the search space (boudaries set bu the user). Each complex has a certain number of elements,
+1. Initialization: Generate an initial set of points into complexes randomly within the search space (boudaries set by the user). Each complex has a certain number of elements,
 
 2. Evolution: Each complex evolves using a combination of deterministic (e.g., Nelder-Meade simplex method) and probabilistic (e.g., random sampling, monte-carlo type method)
    methods. This step mimics the process of pro-creation by mixing genes to have descendents with better genes.  
