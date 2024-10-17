@@ -16,12 +16,16 @@ Steps involved in SCE are:
 6. Shuffling: Randomly shuffle the complexes to explore different regions of the search space. This is donw by grouping the best points of each complex together to form new complexes. This is done periodically to prevent premature convergence and explore different regions of the search space. 
 
 Termination: Repeat steps 2-5 until a termination criterion is met (e.g., maximum number of iterations or convergence).
+
 Advantages of SCE:
 
-In summary:
 - Global optimization: SCE is well-suited for finding global optima in complex landscapes.   
 - Efficiency: It can be computationally efficient compared to some other global optimization methods.   
 - Robustness: SCE is relatively robust to noise and local minima.
+
+Disadvatanges:
+- The method has no mathematical prove that it converges to the global minimum
+- There is a large number of hyper-parameters, whose tunning is crucial for the speed of the convergence.
 
 The code includes a set of well-known test functions. The code does fail at a few of those diffuclt cases, showing the limits of the method.
 
