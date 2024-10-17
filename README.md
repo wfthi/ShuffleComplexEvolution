@@ -1,12 +1,12 @@
 # ShuffleComplexEvolution
 
-Shuffled Complex Evolution (SCE) is a global optimization algorithm that combines elements of probabilistic and deterministic approaches. It's particularly effective for solving complex optimization problems, especially those with multiple minima. The routine is written in Python3 and add the concept of extinction (a complex will disappear if it is not successful). The same algorithm written in IDL can be found from the same author. 
+Shuffled Complex Evolution (SCE) is a global optimization algorithm using a hybrid approach that combines elements of probabilistic and deterministic approaches. It's particularly effective for solving complex optimization problems, especially those with multiple minima. A major advantage is that the method does not require the computation of gradients. The routine is written in Python3 and add the concept of extinction (a complex will disappear if it is not successful). It has been converted to Python. The same algorithm written in IDL can be found from the same author. 
 
 Steps involved in SCE are:
 
-1. Initialization: Generate an initial set of points into complexes randomly within the search space. Each complex has a certain number of elements,
+1. Initialization: Generate an initial set of points into complexes randomly within the search space (boudaries set bu the user). Each complex has a certain number of elements,
 
-2. Evolution: Each complex evolves using a combination of deterministic (e.g., Nelder-Meade simplex method) and probabilistic (e.g., random sampling)
+2. Evolution: Each complex evolves using a combination of deterministic (e.g., Nelder-Meade simplex method) and probabilistic (e.g., random sampling, monte-carlo type method)
    methods. This step mimics the process of pro-creation by mixing genes to have descendents with better genes.  
 
 4. Evaluation: Evaluate the fitness of each new point in each complex based on the objective function.   
@@ -18,9 +18,10 @@ Steps involved in SCE are:
 Termination: Repeat steps 2-5 until a termination criterion is met (e.g., maximum number of iterations or convergence).
 Advantages of SCE:
 
-Global optimization: SCE is well-suited for finding global optima in complex landscapes.   
-Efficiency: It can be computationally efficient compared to some other global optimization methods.   
-Robustness: SCE is relatively robust to noise and local minima.
+In summary:
+- Global optimization: SCE is well-suited for finding global optima in complex landscapes.   
+- Efficiency: It can be computationally efficient compared to some other global optimization methods.   
+- Robustness: SCE is relatively robust to noise and local minima.
 
 Reference:
 
