@@ -23,6 +23,8 @@ In summary:
 - Efficiency: It can be computationally efficient compared to some other global optimization methods.   
 - Robustness: SCE is relatively robust to noise and local minima.
 
+The code includes a set of well-known test functions. The code does fail at a few of those diffuclt cases, showing the limits of the method.
+
 Reference:
 
 Duan, Q., A Global Optimization Strategy for Efficient and
